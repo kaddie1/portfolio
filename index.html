@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"Jamrock| Home</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <Script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+
+    </Script>
+
 </head>
 
 <body>
@@ -28,16 +65,78 @@
         
 
         <main>
-        <div class="container">
-        <img src ="images/Hanover_Jamaica.jpg" alt="Hanover Jamaica">
-        <img src ="images/jamaica_flag_update.png" alt="Jamaica flag">
         
-        <img src ="images/bob_playing.jpg" alt="Bob Marley">
-        <img src ="images/jerk_chicken.jpg" alt="Jerk Chicken">
-        <img src ="images/Rice_and_Peas_cropped.jpg" alt="Rice and Peas">
-        <img src ="images/usain_cropped.jpg" alt="Usain Bolt">       
-           
+            <p class = "about-image">Click an image below to view gallery slideshow</p>
+        
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+        <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="images/bob_playing.jpg" alt="Bob Marley" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img src="images/jamaica_flag_update.png" alt="Jamaica flag" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src= "images/Jamaica_Martha_Brae_River_crop.jpg" alt="Martha Brae River"  style="width:100%">
+            </div>
+        
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="images/jerk_chicken.jpg" alt="Jerk Chicken" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="images/Jamaicaraft_crop.jpg" alt="Bamboo rafting" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="images/ackee_and_saltfish_1.jpg" alt= "Ackee and Saltfish" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">    
+                <img class="demo cursor"  src="images/bob_playing.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bob Marley">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/jamaica_flag_update.png" style="width:100%" onclick="currentSlide(2)" alt="Jamaica flag">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/Jamaica_Martha_Brae_River_crop.jpg" style="width:100%" onclick="currentSlide(3)" alt="Martha Brae River">
+            </div>
+            
+            <div class="column">
+                <img class="demo cursor" src="images/jerk_chicken.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jerk Chicken">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/Jamaicaraft_crop.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bamboo rafting">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src=images/ackee_and_saltfish_1.jpg style="width:100%" onclick="currentSlide(6)" alt="Ackee and Saltfish">
+            </div>
+            </div>
         </div>
+
 
         <h1 class = "about-title">The island of Jamaica</h1>
 
@@ -45,14 +144,14 @@
             
             <p class = main_para>
                 
-                <img src="images/island.png" alt="island of Jamaica">
+                <img class = "jamaica" src="images/island.png" alt="island of Jamaica">
             
             
                 <p>Jamaica is an island in the Caribbean that is surrounded by the Caribbean Sea. It is also referred to as the “Land of Wood and Water”. It gained its independence on August 6, 1962. Because of its history, they have a rich and diverse culture. Its motto is “Out of Many One People.” The population as of 2022 is 2.83 million. 
                     The Jamaican flag is black, green, and gold. Other nicknames for Jamaica are Jamdown and Jamrock.
                 </p>
 
-            <h4>Symbols in Jamaica:</h4>
+            <h4 class ="symbol"> Symbols in Jamaica:</h4>
             
                 <ul>
                     <li>Coat of Arms</li>
