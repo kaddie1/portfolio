@@ -54,12 +54,6 @@ body{
     margin: 10px;
     padding: 10px;
     color: white
-    
-}
-
-#main_paragraph {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .jamaica{
@@ -90,9 +84,7 @@ footer{
   width: 100%;
   background-color: green;
   color:black;
-  display: flex;
-  justify-content:space-between;
-  margin-top: 75px;
+  text-align: center;
   
   
 }
@@ -102,17 +94,11 @@ footer{
 
 .flag{
 
-  width: 100px;
-  padding-right: 10px;
-  padding-top: 5px;
+  width: 50px;
  
 
 }
 
-.copy_right{
-
-  padding-left: 10px;
-}
 
 
 * {
