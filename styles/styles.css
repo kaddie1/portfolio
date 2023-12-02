@@ -70,6 +70,51 @@ body{
   }
 
 
+  .blue_hole{
+   
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      padding-bottom: 10px;
+    }
+
+
+.ackee{
+   
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.headings_tourist{
+  background-color: yellow;
+  font-family: "Times New Roman", sans-serif, courier;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+.headings_food{
+  background-color:green;
+  font-family: "Times New Roman", sans-serif, courier;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+
+
+}
+
 
 .about-title{
     
@@ -80,6 +125,19 @@ body{
     color: green;
     text-align: center;
      
+}
+
+
+
+.tourist{
+
+  font-family: "Anton", Arial, Helvetica;
+        
+  font-size: 2em;
+  margin-top: 30px;
+  color: green;
+  text-align: center;
+
 }
 
 
@@ -97,7 +155,11 @@ footer{
   
 }
 
+.sub-headings{
 
+  text-decoration: underline;
+
+}
 
 
 .flag{
