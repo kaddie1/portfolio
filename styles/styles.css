@@ -115,6 +115,49 @@ body{
 
 }
 
+.tourist_sub_headings{
+
+  text-align: center;
+
+}
+
+
+#main_para {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+.bob{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+.usain{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+.shelly{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
+
 
 .about-title{
     
